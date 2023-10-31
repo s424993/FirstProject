@@ -2,6 +2,6 @@
 -- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
 -- Including Win32 support
 -- GLM: Version 0.9.9.9
--- Configuring done (0.3s)
--- Generating done (0.3s)
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
 -- Build files have been written to: C:/Users/vivik/CLionProjects/FirstProject/cmake-build-debug
