@@ -4,8 +4,14 @@ cmake_minimum_required(VERSION 3.18)
 set(SOURCE_FILES src/main.cpp
         src/Game.cpp
         src/Game.h
-        src/Shader.cpp
-        src/Shader.h)
+        src/rendering/Shader.cpp
+        src/rendering/Shader.h
+        src/rendering/Mesh.cpp
+        src/rendering/Mesh.h
+        src/entities/Entity.cpp
+        src/entities/Entity.h
+        src/entities/Ship.cpp
+        src/entities/Ship.h)
 
 # set executable name
 set(EXE_FILE Game)

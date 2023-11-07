@@ -691,11 +691,35 @@ build game\CMakeFiles\Game.dir\src\Game.cpp.obj: CXX_COMPILER__Game_unscanned_De
   TARGET_COMPILE_PDB = game\CMakeFiles\Game.dir\
   TARGET_PDB = game\Game.pdb
 
-build game\CMakeFiles\Game.dir\src\Shader.cpp.obj: CXX_COMPILER__Game_unscanned_Debug C$:\Users\vivik\Documents\FirstProject\game\src\Shader.cpp || cmake_object_order_depends_target_Game
+build game\CMakeFiles\Game.dir\src\rendering\Shader.cpp.obj: CXX_COMPILER__Game_unscanned_Debug C$:\Users\vivik\Documents\FirstProject\game\src\rendering\Shader.cpp || cmake_object_order_depends_target_Game
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
   INCLUDES = -IC:\Users\vivik\Documents\FirstProject\extern\glad\include -IC:\Users\vivik\Documents\FirstProject\extern\glfw\include -IC:\Users\vivik\Documents\FirstProject\extern\glm
   OBJECT_DIR = game\CMakeFiles\Game.dir
-  OBJECT_FILE_DIR = game\CMakeFiles\Game.dir\src
+  OBJECT_FILE_DIR = game\CMakeFiles\Game.dir\src\rendering
+  TARGET_COMPILE_PDB = game\CMakeFiles\Game.dir\
+  TARGET_PDB = game\Game.pdb
+
+build game\CMakeFiles\Game.dir\src\rendering\Mesh.cpp.obj: CXX_COMPILER__Game_unscanned_Debug C$:\Users\vivik\Documents\FirstProject\game\src\rendering\Mesh.cpp || cmake_object_order_depends_target_Game
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -IC:\Users\vivik\Documents\FirstProject\extern\glad\include -IC:\Users\vivik\Documents\FirstProject\extern\glfw\include -IC:\Users\vivik\Documents\FirstProject\extern\glm
+  OBJECT_DIR = game\CMakeFiles\Game.dir
+  OBJECT_FILE_DIR = game\CMakeFiles\Game.dir\src\rendering
+  TARGET_COMPILE_PDB = game\CMakeFiles\Game.dir\
+  TARGET_PDB = game\Game.pdb
+
+build game\CMakeFiles\Game.dir\src\entities\Entity.cpp.obj: CXX_COMPILER__Game_unscanned_Debug C$:\Users\vivik\Documents\FirstProject\game\src\entities\Entity.cpp || cmake_object_order_depends_target_Game
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -IC:\Users\vivik\Documents\FirstProject\extern\glad\include -IC:\Users\vivik\Documents\FirstProject\extern\glfw\include -IC:\Users\vivik\Documents\FirstProject\extern\glm
+  OBJECT_DIR = game\CMakeFiles\Game.dir
+  OBJECT_FILE_DIR = game\CMakeFiles\Game.dir\src\entities
+  TARGET_COMPILE_PDB = game\CMakeFiles\Game.dir\
+  TARGET_PDB = game\Game.pdb
+
+build game\CMakeFiles\Game.dir\src\entities\Ship.cpp.obj: CXX_COMPILER__Game_unscanned_Debug C$:\Users\vivik\Documents\FirstProject\game\src\entities\Ship.cpp || cmake_object_order_depends_target_Game
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -IC:\Users\vivik\Documents\FirstProject\extern\glad\include -IC:\Users\vivik\Documents\FirstProject\extern\glfw\include -IC:\Users\vivik\Documents\FirstProject\extern\glm
+  OBJECT_DIR = game\CMakeFiles\Game.dir
+  OBJECT_FILE_DIR = game\CMakeFiles\Game.dir\src\entities
   TARGET_COMPILE_PDB = game\CMakeFiles\Game.dir\
   TARGET_PDB = game\Game.pdb
 
@@ -707,7 +731,7 @@ build game\CMakeFiles\Game.dir\src\Shader.cpp.obj: CXX_COMPILER__Game_unscanned_
 #############################################
 # Link the executable game\Game.exe
 
-build game\Game.exe: CXX_EXECUTABLE_LINKER__Game_Debug game\CMakeFiles\Game.dir\src\main.cpp.obj game\CMakeFiles\Game.dir\src\Game.cpp.obj game\CMakeFiles\Game.dir\src\Shader.cpp.obj | extern\glad\glad.lib extern\glfw\src\glfw3.lib || extern\glad\glad.lib extern\glfw\src\glfw3.lib
+build game\Game.exe: CXX_EXECUTABLE_LINKER__Game_Debug game\CMakeFiles\Game.dir\src\main.cpp.obj game\CMakeFiles\Game.dir\src\Game.cpp.obj game\CMakeFiles\Game.dir\src\rendering\Shader.cpp.obj game\CMakeFiles\Game.dir\src\rendering\Mesh.cpp.obj game\CMakeFiles\Game.dir\src\entities\Entity.cpp.obj game\CMakeFiles\Game.dir\src\entities\Ship.cpp.obj | extern\glad\glad.lib extern\glfw\src\glfw3.lib || extern\glad\glad.lib extern\glfw\src\glfw3.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = extern\glad\glad.lib  extern\glfw\src\glfw3.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
