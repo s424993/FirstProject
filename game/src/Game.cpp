@@ -85,6 +85,7 @@ Game::Game(int width, int height, const std::string &title) {
 }
 
 Game::~Game() {
+    delete shader;
     glfwTerminate();
 }
 
@@ -141,8 +142,7 @@ void Game::draw() {
     glClear(GL_COLOR_BUFFER_BIT);
     glDrawArrays(GL_TRIANGLES, 0, 18);
 
-    int mvpLocation = glGetUniformLocation(shaderProgram, "mvp");
-    glUniformMatrix4fv(mvpLocation, 1, GL_FALSE, glm::value_ptr(mvpMatrix));
+    shader->setMatrix("mvp", mvpMatrix);
 
     glfwSwapBuffers(window);
 }
@@ -155,26 +155,8 @@ void Game::updateDeltaTime() {
 }
 
 void Game::run() {
-    unsigned int vertexShader;
-    vertexShader = glCreateShader(GL_VERTEX_SHADER);
-
-    glShaderSource(vertexShader, 1, &vertexShaderSource, nullptr);
-    glCompileShader(vertexShader);
-
-    unsigned int fragmentShader;
-    fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShader, 1, &fragmentShaderSource, nullptr);
-    glCompileShader(fragmentShader);
-
-    shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
-    glLinkProgram(shaderProgram);
-    glUseProgram(shaderProgram);
-    glDetachShader(shaderProgram, vertexShader);
-    glDetachShader(shaderProgram, fragmentShader);
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
+    shader = new Shader(vertexShaderSource, fragmentShaderSource);
+    shader -> use();
 
     unsigned int VBO;
     glGenBuffers(1, &VBO);

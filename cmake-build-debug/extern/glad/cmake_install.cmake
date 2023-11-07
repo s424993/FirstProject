@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/vivik/CLionProjects/FirstProject/extern/glad
+# Install script for directory: C:/Users/vivik/Documents/FirstProject/extern/glad
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

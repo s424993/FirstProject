@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/vivik/CLionProjects/FirstProject/game
+# Install script for directory: C:/Users/vivik/Documents/FirstProject/game
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

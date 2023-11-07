@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/vivik/CLionProjects/FirstProject/extern/glm
+# Install script for directory: C:/Users/vivik/Documents/FirstProject/extern/glm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/vivik/CLionProjects/FirstProject/cmake-build-debug/extern/glm/glm/cmake_install.cmake")
+  include("C:/Users/vivik/Documents/FirstProject/cmake-build-debug/extern/glm/glm/cmake_install.cmake")
 
 endif()
 
